@@ -6,11 +6,11 @@ import { ActiveLink } from '@/components/active-link/ActiveLink'
 export default function Home() {
     return (
         <MainLayout>
-            <h1>Home Page</h1>
+            <h1>Contact Page</h1>
 
             <ActiveLink 
-                href='/about'
-                text='Ir a About'
+                href='/'
+                text='Ir a Home'
                 active={ true }
                 heading
             />
@@ -18,7 +18,7 @@ export default function Home() {
             <div className='description'>
                 <p>
                     Get started by editing&nbsp;
-                    <code className='code'>pages/index.tsx</code>
+                    <code className='code'>pages/contact.tsx</code>
                 </p>
                 <div>
                     <a

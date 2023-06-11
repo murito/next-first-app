@@ -1,16 +1,17 @@
+import { ActiveLink } from '@/components/active-link/ActiveLink'
+import MainLayout from '@/components/layouts/MainLayout'
 import Image from 'next/image'
 import Link from 'next/link'
-import MainLayout from '@/components/layouts/MainLayout'
-import { ActiveLink } from '@/components/active-link/ActiveLink'
+import React from 'react'
 
-export default function Home() {
+const index = () => {
     return (
         <MainLayout>
-            <h1>Home Page</h1>
+            <h1>Pricing Page</h1>
 
             <ActiveLink 
-                href='/about'
-                text='Ir a About'
+                href='/'
+                text='Ir a Home'
                 active={ true }
                 heading
             />
@@ -18,7 +19,7 @@ export default function Home() {
             <div className='description'>
                 <p>
                     Get started by editing&nbsp;
-                    <code className='code'>pages/index.tsx</code>
+                    <code className='code'>pages/pricing/index.tsx</code>
                 </p>
                 <div>
                     <a
@@ -41,3 +42,5 @@ export default function Home() {
         </MainLayout>
     )
 }
+
+export default index
